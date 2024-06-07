@@ -1,0 +1,25 @@
+<div class="step-text">
+<p>FizzBuzz is a children's game to learn division. You are given a range of numbers, and you are to count incrementally. Although, when a number is divisible by 3, you should say "fizz", and when a number is divisible by 5, you should say "buzz". When both conditions are true for a number, you should say "fizzbuzz".</p>
+<p>Take a look at the piece of code below that solves this task for the range from 1 to 100:</p>
+<pre><code class="language-kotlin">fun fizzbuzz(from: Int, to: Int, transformation: (Int) -&gt; String) {
+    for (number in from..to) {
+        println(transformation(number))
+    }
+}
+
+fun main() {
+    fizzbuzz(1, 100) { number -&gt;
+        if (number % 15 == 0) {
+            ___ "fizzbuzz"
+        }
+        if (number % 3 == 0) {
+            ___ "fizz"
+        }
+        if (number % 5 == 0) {
+            ___ "buzz"
+        }
+        ___ number.toString()
+    }
+}</code></pre>
+<p>What should you write instead of the gaps to return the answer from the lambda?</p>
+</div>
